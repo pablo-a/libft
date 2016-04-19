@@ -6,7 +6,7 @@
 #    By: pabril <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 12:46:26 by pabril            #+#    #+#              #
-#    Updated: 2016/04/19 14:32:11 by pabril           ###   ########.fr        #
+#    Updated: 2016/04/19 14:51:43 by pabril           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,9 +109,10 @@ SRC = ft_atoi.c \
 	  ft_modf.c \
 	  ft_radtodeg.c \
 	  ft_sin.c \
-	  ft_tan.c
+	  ft_tan.c \
+	  get_next_line.c
 
-INC = includes/libft.h includes/ft_printf.h
+INC = includes/libft.h includes/ft_printf.h includes/get_next_line.h
 
 OBJ = $(SRC:.c=.o)
 
