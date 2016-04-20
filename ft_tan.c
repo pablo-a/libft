@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabril <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/19 13:59:17 by pabril            #+#    #+#             */
-/*   Updated: 2016/04/19 13:59:32 by pabril           ###   ########.fr       */
+/*   Created: 2016/04/20 11:31:42 by pabril            #+#    #+#             */
+/*   Updated: 2016/04/20 11:32:25 by pabril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-double	ft_tan(double x)
+double		ft_tan(double x)
 {
 	return (ft_sin(x) / ft_cos(x));
 }

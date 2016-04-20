@@ -6,7 +6,7 @@
 #    By: pabril <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 12:46:26 by pabril            #+#    #+#              #
-#    Updated: 2016/04/19 14:51:43 by pabril           ###   ########.fr        #
+#    Updated: 2016/04/20 11:57:36 by pabril           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ FLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 SRC = ft_atoi.c \
+	  ft_atol.c \
 	  ft_bzero.c \
 	  ft_isalnum.c \
 	  ft_isalpha.c \
@@ -25,6 +26,7 @@ SRC = ft_atoi.c \
 	  ft_isupper.c \
 	  ft_islower.c \
 	  ft_isspace.c \
+	  ft_isnumeric.c \
 	  ft_itoa.c \
 	  ft_lstadd.c \
 	  ft_lstpushback.c \

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabril <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/19 10:56:32 by pabril            #+#    #+#             */
-/*   Updated: 2016/04/19 12:28:21 by pabril           ###   ########.fr       */
+/*   Created: 2016/04/20 11:33:03 by pabril            #+#    #+#             */
+/*   Updated: 2016/04/20 11:58:18 by pabril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-double	ft_cos(double nb)
+double		ft_cos(double nb)
 {
 	double	result;
 	double	current;

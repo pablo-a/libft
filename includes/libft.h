@@ -6,7 +6,7 @@
 /*   By: pabril <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 10:30:14 by pabril            #+#    #+#             */
-/*   Updated: 2016/04/19 13:56:13 by pabril           ###   ########.fr       */
+/*   Updated: 2016/04/20 11:57:04 by pabril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void			ft_putendl(const char *s);
 void			ft_putendl_fd(const char *s, int fd);
 
 int				ft_atoi(const char *str);
+long			ft_atol(const char *str);
 char			*ft_itoa(int n);
 
 int				ft_isspace(int c);
@@ -45,6 +46,7 @@ int				ft_toupper(int c);
 int				ft_islower(int c);
 int				ft_isupper(int c);
 int				ft_isspace(int c);
+int				ft_isnumeric(const char *str);
 
 char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strncat(char *s1, const char *s2, size_t n);
@@ -83,13 +85,13 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
-t_struct			*ft_lstnew(void const *content, size_t content_size);
+t_struct		*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstdelone(t_struct **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_struct **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_struct **alst, t_struct *news);
 void			ft_lstpushback(t_struct **alst, t_struct *news);
 void			ft_lstiter(t_struct *lst, void (*f)(t_struct *elem));
-t_struct			*ft_lstmap(t_struct *lst, t_struct *(*f)(t_struct *elem));
+t_struct		*ft_lstmap(t_struct *lst, t_struct *(*f)(t_struct *elem));
 
 int				ft_abs(int nb);
 long			ft_labs(long nb);
@@ -105,6 +107,5 @@ double			ft_modf(double x, double *ent);
 double			ft_fmod(double x, double mod);
 double			ft_sin(double x);
 double			ft_tan(double x);
-
 
 #endif

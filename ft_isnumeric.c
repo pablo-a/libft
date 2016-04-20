@@ -1,16 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ceil.c                                          :+:      :+:    :+:   */
+/*   ft_isnumeric.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabril <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/20 11:44:21 by pabril            #+#    #+#             */
-/*   Updated: 2016/04/20 11:44:28 by pabril           ###   ########.fr       */
+/*   Created: 2016/04/20 11:49:58 by pabril            #+#    #+#             */
+/*   Updated: 2016/04/20 11:58:39 by pabril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	ft_ceil(double x)
+#include "libft.h"
+
+int		ft_isnumeric(const char *str)
 {
-	return (((double)(int)x) + 1);
+	int		i;
+
+	i = 0;
+	if (str[0] == '+' || str[0] == '-')
+		i = 1;
+	while (str[i])
+	{
+		if (!ft_isdigit(str[i]))
+			return (0);
+		i++;
+	}
+	return (1);
 }
